@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.quiz_app.SignUpActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:paddingTop="@dimen/dimen_48"
+        app:srcCompat="@drawable/ic_trophy" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:paddingLeft="@dimen/dimen_48"
+        android:paddingRight="@dimen/dimen_48"
+        android:paddingTop="@dimen/dimen_16x"
+        android:textColorHint="@color/colorPrimaryDark">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="Name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_48"
+        android:paddingRight="@dimen/dimen_48"
+        android:paddingTop="@dimen/dimen_16x"
+        android:textColorHint="@color/colorPrimaryDark">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="Email"
+            android:textCursorDrawable="@color/colorPrimaryDark" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_48"
+        android:paddingRight="@dimen/dimen_48"
+        android:paddingTop="@dimen/dimen_16x"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:hintAnimationEnabled="false"
+        app:passwordToggleEnabled="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:hint="Password"
+            android:password="true"
+            android:textColorLink="@android:color/background_dark" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@android:dimen/notification_large_icon_width"
+        android:layout_marginRight="@dimen/dimen_64"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/dimen_64"
+        android:paddingRight="@dimen/dimen_64"
+        android:paddingTop="@dimen/dimen_32"
+        android:text="Forgot Password?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColorLink="@android:color/background_light" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_48"
+        android:layout_marginRight="@dimen/dimen_48"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:text="SIGN UP"
+        android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_light" />
+</LinearLayout>
